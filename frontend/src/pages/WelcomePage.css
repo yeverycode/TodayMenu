@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'GmarketSans-Bold';
+    src: url('../assets/fonts/GmarketSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GmarketSans-Medium';
+    src: url('../assets/fonts/GmarketSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hakgyoansim-Bold';
+    src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+body {
+    background-color: #FFFFF0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hakgyoansim-Bold';
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.character {
+    width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 48px;
+    margin: 20px 0;
+    font-family: 'Hakgyoansim-Bold';
+}
+
+.title .pink {
+    color: #F2B9C2;
+}
+
+.title .brown {
+    color: #C79665;
+}
+
+.title .highlight {
+    color: #b57b47;
+}
+
+.start-button {
+    font-family: 'GmarketSans-Bold';
+    font-size: 25px;
+    padding: 15px 25px;
+    background-color: #F2B9C2;  /* 연핑크 */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 살짝 그림자 */
+    cursor: pointer;
+    margin-top: 80px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.start-button:hover {
+    transform: translateY(-3px);
+    background-color: #f291a7;  /* hover 시 조금 더 진한 핑크 */
+}
+
+.login-text {
+    font-family: 'GmarketSans-Medium';
+    margin-top: 20px;
+    font-size: 16px;
+    color: #b57b47;  /* 브라운 */
+}
+
+.login-link {
+    font-family: 'GmarketSans-Bold';
+    color: #f5a9b8;  /* 연핑크 */
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 0.2s ease;
+}
+
+.login-link:hover {
+    color: #e88a9c;  /* hover 시 조금 더 진하게 */
+}

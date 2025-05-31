@@ -1,0 +1,32 @@
+.teampick-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fffbe9;
+  text-align: center;
+}
+
+.teampick-image {
+  width: 220px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.teampick-title {
+  font-size: 32px;
+  color: #d99aaa;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.teampick-title span {
+  color: #f197b2;
+}
+
+.teampick-description {
+  color: #b57b47;
+  font-size: 16px;
+  line-height: 1.6;
+}

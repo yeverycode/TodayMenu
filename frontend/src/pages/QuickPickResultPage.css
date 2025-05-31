@@ -1,0 +1,154 @@
+@import '../styles/Common.css';
+
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('../assets/fonts/GmarketSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.result-circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.circle-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2B9C2;
+    transition: height 1s ease;
+}
+
+.circle-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.circle-inner img.menu-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.circle-inner h2 {
+    color: #7A4E29;
+    font-family: 'Hakgyoansim-Bold';
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.circle-inner p {
+    color: #C48D99;
+    font-size: 20px;
+}
+
+.description {
+    font-family: 'GmarketSans';
+    margin-top: 10px;
+    font-size: 14px;
+    color: #A77E5A;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.description .nickname {
+  font-family: 'GmarketSansBold';
+  color: #F2B9C2;
+  font-weight: bold;
+  font-size: 14px; 
+}
+
+.description .percentage {
+    color: #F2B9C2;
+    font-weight: bold;
+}
+
+.description .detail-link {
+    display: block;
+    margin-top: 10px;
+    color: #C79665;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.result-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 60px; /* 기존 값보다 늘릴 경우 간격 증가 */
+}
+
+
+.result-buttons .other-menu {
+  all: unset;
+  background-color: white;
+  color: #C79665;
+  padding: 12px 36px;
+  font-family: 'GmarketSans-Medium';
+  font-size: 16px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.result-buttons .other-menu:hover {
+  background-color: #fdf4f0;
+  transform: translateY(-3px);
+}
+
+.result-buttons .main-button {
+  all: unset;
+  background-color: #F2B9C2;
+  color: white;
+  padding: 12px 36px;
+  font-family: 'GmarketSans-Medium';
+  font-size: 16px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.result-buttons .main-button:hover {
+  background-color: #e6aab5;
+  transform: translateY(-3px);
+}
+
+
+h2.result-title {
+  font-size: 35px !important;
+  font-family: 'Hakgyoansim-Bold' !important;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result-title .brown {
+  color: #C79665; /* 진한 갈색 */
+}
+
+.result-title .pink {
+  color: #F2B9C2;
+}
+

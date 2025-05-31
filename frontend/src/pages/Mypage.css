@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'Hakgyoansim-Bold';
+  src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hakgyoansim-Regular';
+  src: url('../assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+
+/* 전체 글꼴 기본 설정 */
+body {
+  background-color: #FFFFF0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hakgyoansim-Bold' !important;
+}
+
+/* 페이지 컨테이너 */
+.mypage-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #FFFFF0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 페이지 제목 */
+.mypage-title {
+  font-size: 30px;
+  color: #C79665;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* 각 항목 컨테이너 */
+.mypage-item {
+  background-color: white;
+  border: 2px solid #F2B9C2;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 25px;
+  width: 360px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 라벨 + 선택지 묶음 */
+.mypage-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+}
+
+/* 항목 라벨 (지병, 알러지 등) */
+.mypage-label {
+  font-size: 18px;
+  color: #C79665;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+/* 선택된 태그들 묶음 */
+.mypage-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+}
+
+
+/* 선택지 태그 */
+.mypage-tags span,
+.tag {
+  background-color: #F2B9C2 !important;
+  color: white !important;
+  font-family: 'Hakgyoansim-Bold' !important;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* 삭제 버튼 (태그 안 X) */
+.remove-button {
+  background: none;
+  border: none;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.add-button {
+  background-color: white;
+  color: #F2B9C2;
+  border: 2px solid #F2B9C2;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  font-family: 'Hakgyoansim-Bold';
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* 태그 오른쪽으로 정렬 */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.add-button:hover {
+  background-color: #fff0f4;
+}
+
+
+/* 저장 버튼 */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 30px;
+}
+
+.save-button {
+  background-color: #F2B9C2 !important;
+  color: white !important;
+  padding: 12px 36px !important;
+  font-family: 'GmarketSans-Medium';
+  font-size: 16px;
+  border-radius: 25px !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.2s ease, background-color 0.3s ease !important;
+}
+
+.save-button:hover {
+  background-color: #e6aab5 !important;
+  transform: translateY(-3px) !important;
+}
+
+
+/* 히스토리 버튼 컨테이너 */
+.history-button-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+}
+
+/* 히스토리 버튼 */
+.history-button {
+  font-family: 'Hakgyoansim-Bold' !important;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: #E3CBB2;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.2s ease;
+}
+
+.history-button:hover {
+  background-color: #cdb29b;
+}
+
+.arrow {
+  font-size: 18px;
+  margin-left: 8px;
+}

@@ -1,0 +1,145 @@
+/* 폰트 */
+@font-face {
+  font-family: 'Hakgyoansim-Bold';
+  src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hakgyoansim-Regular';
+  src: url('../assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GmarketSans-Medium';
+  src: url('../assets/fonts/GmarketSans-Medium.ttf') format('truetype');
+}
+
+/* 전체 배경 및 글꼴 기본값 */
+body {
+  background-color: #FFFFF0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hakgyoansim-Regular';
+}
+
+/* 컨테이너 */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* 제목 */
+.register-title {
+  font-family: 'Hakgyoansim-Bold';
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.register-title .pink {
+  color: #F2B9C2;
+}
+
+.register-title .brown {
+  color: #C79665;
+}
+
+/* 입력창 */
+.input-box {
+  width: 300px;
+  padding: 20px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 2px solid #F2B9C2;     /* 항상 분홍 */
+  border-radius: 10px;
+  background-color: white;
+  font-family: 'Hakgyoansim-Regular';
+  color: #C79665;                /* 입력한 텍스트 색상 */
+}
+
+.input-box::placeholder {
+  color: #C79665;
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: #F2B9C2;
+}
+
+/* 에러일 때 빨간 테두리 */
+.input-box.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* 버튼 영역 */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.back-button,
+.next-button {
+  all: unset;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* 좌우 여백만 줍니다 */
+  border: none;
+  border-radius: 25px;
+  font-family: 'GmarketSans-Medium' !important;
+  font-size: 16px;
+  line-height: 1; /* 세로 정렬 안정화 */
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box; /* padding 포함한 너비 유지 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background 0.2s ease;
+  background-color: transparent;
+}
+
+
+.register-back-button{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+    padding: 0 22px;
+    background-color: white;
+    color: #B57B47;
+    box-sizing: border-box; /* padding 포함한 너비 유지 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'GmarketSans-Medium' !important;
+    font-size: 20px;
+    border: none !important;
+}
+
+
+.next-button {
+  color: #FFFFFF !important;
+  background-color: #F2B9C2 !important;
+}
+
+.back-button:hover {
+  background-color: #f7f7f7;
+  transform: translateY(-3px);
+}
+
+.next-button:hover {
+  background-color: #f291a7;
+  transform: translateY(-3px);
+}

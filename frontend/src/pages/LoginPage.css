@@ -1,0 +1,129 @@
+/* 폰트 */
+@font-face {
+  font-family: 'Hakgyoansim-Bold';
+  src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hakgyoansim-Regular';
+  src: url('../assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GmarketSans-Medium';
+  src: url('../assets/fonts/GmarketSans-Medium.ttf') format('truetype');
+}
+
+/* 기본 */
+body {
+  background-color: #FFFFF0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hakgyoansim-Regular';
+}
+
+/* 로그인 페이지 컨테이너 */
+.login-container {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #FFFFF0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 제목 */
+.login-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: 'Hakgyoansim-Bold';
+}
+
+.login-title .pink {
+  color: #F2B9C2;
+}
+
+.login-title .brown {
+  color: #C79665;
+}
+
+/* 입력창 */
+.login-input {
+  display: block;
+  margin: 15px auto;
+  padding: 20px 15px;
+  width: 300px;
+  font-size: 16px;
+  border: 2px solid #F2B9C2;
+  border-radius: 10px;
+  background-color: white;
+  font-family: 'Hakgyoansim-Regular';
+  color: #C79665;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: #C79665;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #F2B9C2;
+  box-shadow: 0 0 8px rgba(242, 185, 194, 0.4);
+}
+
+/* 에러 메시지 */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* 버튼 그룹 */
+.login-button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 250px;
+}
+
+/* 버튼 스타일 (통일) */
+.login-button,
+.register-button {
+  all: unset;
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 25px;
+  font-family: 'GmarketSans-Medium';
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* 회원가입 버튼 */
+.register-button {
+  background-color: white;
+  color: #C79665;
+}
+
+.register-button:hover {
+  background-color: #fdf4f0;
+  transform: translateY(-3px);
+}
+
+
+/* 로그인 버튼 (분홍색) */
+.login-button {
+  background-color: #F2B9C2;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #e6aab5;
+  transform: translateY(-3px);
+}
+

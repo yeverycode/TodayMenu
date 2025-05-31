@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Hakgyoansim-Bold';
+    src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hakgyoansim-Regular';
+    src: url('../assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #FFFFF0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hakgyoansim-Regular';
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-title {
+    font-family: 'Hakgyoansim-Bold';
+    font-size: 28px;
+    color: #F2B9C2;
+    margin-bottom: 20px;
+}
+
+.page-title span {
+    color: #C79665;
+}
+
+.common-button {
+    font-family: 'Hakgyoansim-Bold';
+    font-size: 18px;
+    padding: 10px 40px;
+    background-color: #F2B9C2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+    margin-top: 30px;
+}
+
+.common-button:hover {
+    transform: translateY(-3px);
+    background-color: #e89aa8;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.radio-group label {
+    font-family: 'Hakgyoansim-Bold';
+    color: #F2B9C2;
+    font-size: 16px;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #F2B9C2;
+}

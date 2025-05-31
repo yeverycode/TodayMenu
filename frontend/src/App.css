@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Hakgyoansim-Regular';
+  src: url('./assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hakgyoansim-Bold';
+  src: url('./assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+body {
+  background-color: #fffbe9;
+  font-family: 'Hakgyoansim-Regular', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+
+/* ✅ 공통 메인 버튼 스타일 (분홍 버튼) */
+.common-button.main {
+  all: unset;
+  background-color: #F2B9C2;
+  color: white;
+  padding: 12px 36px;
+  font-family: 'GmarketSans-Medium';
+  font-size: 16px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.common-button.main:hover {
+  background-color: #e6aab5;
+  transform: translateY(-3px);
+}

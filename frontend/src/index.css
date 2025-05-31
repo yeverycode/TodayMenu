@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Hakgyoansim-Regular';
+  src: url('./assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hakgyoansim-Bold';
+  src: url('./assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+.common-button {
+  font-family: 'Hakgyoansim-Bold';
+  font-size: 18px;
+  padding: 10px 40px;
+  background-color: #F2B9C2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  margin-top: 30px;
+}
+
+.common-button:hover {
+  transform: translateY(-3px);
+  background-color: #e89aa8;
+}

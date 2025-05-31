@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Hakgyoansim-Bold';
+  src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hakgyoansim-Regular';
+  src: url('../assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+
+body {
+  background-color: #FFFFF0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hakgyoansim-Regular';
+}
+
+.preference-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.preference-title {
+  font-family: 'Hakgyoansim-Bold';
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.preference-title .pink {
+  color: #F2B9C2;
+}
+
+.preference-title .brown {
+  color: #C79665;
+}
+
+.preference-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.preference-item {
+  background-color: white;
+  border: 2px solid #F2B9C2;
+  border-radius: 15px;
+  padding: 20px;
+  width: 340px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.preference-image {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.preference-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.preference-name {
+  font-family: 'Hakgyoansim-Bold';
+  font-size: 18px;
+  color: #C79665;
+  text-align: left;
+}
+
+.preference-options {
+  display: flex;
+  gap: 20px;
+}
+
+.preference-option {
+  font-family: 'Hakgyoansim-Bold';
+  color: #F2B9C2;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.preference-option input[type="radio"] {
+  accent-color: #F2B9C2;
+  width: 18px;
+  height: 18px;
+}
+
+
+.next-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 360px;
+}
+
+.next-button {
+  font-family: 'Hakgyoansim-Bold';
+  font-size: 20px;
+  padding: 12px 50px;
+  background-color: #F2B9C2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.next-button:hover {
+  transform: translateY(-3px);
+  background-color: #e89aa8;
+}

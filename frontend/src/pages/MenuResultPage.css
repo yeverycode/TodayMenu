@@ -1,0 +1,135 @@
+.result-container {
+  background-color: #FFFBE9;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Hakgyoansim-Regular';
+  text-align: center;
+  color: #B57B47;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.result-title {
+  font-family: 'GmarketSans-Medium';
+  font-size: 20px !important;
+  color: #C79665;
+  margin-bottom: 12px;
+}
+
+.result-menu {
+  font-size: 50px;
+  font-family: 'Hakgyoansim-Bold'; /* 원하는 글꼴로 변경 */
+  color: #593a1e;
+  text-align: center;
+  white-space: pre-line; /* \n을 줄바꿈 처리 */
+  line-height: 1.4;
+}
+
+.result-image-box {
+  width: 100%;
+  max-width: 420px;
+  border: 2px solid #F2B9C2;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-image {
+  width: 310px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.result-restaurant-info {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.result-restaurant-info h3 {
+    font-family: 'GmarketSans-Bold';
+  font-size: 35px;
+  font-weight: bold;
+  color: #593a1e;
+  margin-bottom: 10px;
+}
+
+.tags {
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tag {
+font-family: 'GmarketSans-Bold';
+  display: inline-block;
+  background-color: #fff !important;
+  color: #C79665 !important;
+  border: 2px solid #F2B9C2;
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 14px;
+  margin: 5px 4px;
+}
+
+.feedback-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.feedback-button {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border: 2px solid #F2B9C2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.feedback-button img {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.other-button {
+    font-family: 'Hakgyoansim-Bold';
+  align-self: flex-end;
+  background-color: #fff;
+  color: #C79665;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 2px solid #C79665;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.navigation-tabs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

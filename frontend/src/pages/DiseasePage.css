@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Hakgyoansim-Bold';
+  src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hakgyoansim-Regular';
+  src: url('../assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+
+body {
+  background-color: #FFFFF0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hakgyoansim-Regular';
+}
+
+.disease-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.disease-title {
+  font-family: 'Hakgyoansim-Bold';
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.disease-title .pink {
+  color: #F2B9C2;
+}
+
+.disease-title .brown {
+  color: #C79665;
+}
+
+.disease-description {
+  font-size: 19px;
+  color: #C79665;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.disease-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 15px;
+  padding-left: 50px;
+  margin-bottom: 200px;
+}
+
+.disease-button {
+  font-family: 'Hakgyoansim-Bold';
+  font-size: 18px;
+  padding: 12px 32px;
+  border-radius: 30px;
+  border: 2px solid #F2B9C2;
+  background-color: white;
+  color: #C79665;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.disease-button.selected {
+  background-color: #F2B9C2;
+  color: white;
+}
+
+.next-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.next-button {
+  font-family: 'Hakgyoansim-Bold';
+  font-size: 20px;
+  padding: 12px 50px;
+  background-color: #F2B9C2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.next-button:hover {
+  transform: translateY(-3px);
+  background-color: #e89aa8;
+}

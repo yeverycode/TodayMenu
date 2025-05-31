@@ -1,0 +1,34 @@
+.quickpick-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fffbe9;
+    text-align: center;
+  }
+  
+  .quickpick-image {
+    width: 220px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+  .quickpick-title {
+    font-family: 'HakgyoansimBold';
+    font-size: 32px;
+    color: #C79665;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .quickpick-title span {
+    color: #f197b2;
+  }
+  
+  .quickpick-description {
+    color: #b57b47;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

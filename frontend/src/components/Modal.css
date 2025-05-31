@@ -1,0 +1,52 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    min-width: 300px;
+}
+
+.modal-content h2 {
+    font-family: 'Hakgyoansim-Bold';
+    color: #C79665;
+    margin-bottom: 20px;
+}
+
+.modal-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-options button {
+    background-color: #F2B9C2;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Hakgyoansim-Bold';
+}
+
+.modal-close {
+    margin-top: 20px;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

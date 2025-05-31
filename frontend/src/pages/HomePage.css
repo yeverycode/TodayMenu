@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'HakgyoansimBold';
+    src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'GmarketSansBold';
+    src: url('../assets/fonts/GmarketSans-Bold.ttf') format('truetype');
+  }
+  
+  .page-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFFFF0;
+    min-height: 100vh;
+  }
+  
+  .page-title {
+    font-family: 'HakgyoansimBold' !important;
+    font-size: 40px !important;
+    margin-bottom: 30px;
+  }
+  
+  .page-title .word-first {
+    color: #F2B9C2; /* 오늘의 → 핑크 */
+  }
+  
+  .page-title .word-middle {
+    color: #C79665; /* 먹방 → 갈색 */
+  }
+  
+  .page-title .word-end {
+    color: #F2B9C2; /* 은 → 핑크 */
+  }
+  
+  .chef-container {
+    background-color: #F2B9C2;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image {
+    width: 200px;
+  }
+  
+  .nickname {
+    font-family: 'HakgyoansimBold';
+    font-size: 30px !important;
+    color: #C79665; /* 갈색 */
+    margin-bottom: 15px;
+  }
+  
+  .location-button {
+  font-family: 'HakgyoansimBold';
+  font-size: 16px;
+  color: #F2B9C2;
+  background-color: white;
+  border: 2px solid #F2B9C2;
+  border-radius: 20px;
+  padding: 8px 20px;        /* 좌우 여백 줄임 */
+  margin: 0 auto 40px auto; /* 중앙 정렬 */
+  display: inline-block;    /* 넓이 자동 + 중앙 정렬과 호환 */
+  min-width: 140px;         /* 버튼 최소 크기 보장 (선택 사항) */
+  text-align: center;
+  cursor: pointer;
+}
+
+  .menu-recommend-button {
+  font-family: 'GmarketSansBold';
+  background-color: #F2B9C2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 21px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 25px auto; /* 중앙 정렬 */
+  display: block;
+  width: 150px; /* 버튼 너비 줄이기 */
+  cursor: pointer;
+}
+  
+  .home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .home-sub-button {
+    font-family: 'GmarketSansBold';
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .home-sub-button.chatbot {
+    border-color: #C79665 !important;
+    color: #C79665;
+    border-style: solid;
+  }
+  
+  .home-sub-button.quickpick {
+    border-color: #F2B9C2 !important;
+    color: #F2B9C2;
+    border-style: solid;
+  }
+
+  .load-more-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-button {
+  background-color: #C79665;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-family: 'Hakgyoansim-Bold';
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

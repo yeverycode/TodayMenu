@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Hakgyoansim-Bold';
+  src: url('../assets/fonts/Hakgyoansim-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Hakgyoansim-Regular';
+  src: url('../assets/fonts/Hakgyoansim-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'GmarketSans-Medium';
+  src: url('../assets/fonts/GmarketSans-Medium.ttf') format('truetype');
+}
+
+.friend-select-container {
+  background-color: #FFFFF0;
+  height: 100vh;
+  padding: 24px 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.with-friend-title{
+  font-size: 32px !important;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-family: 'Hakgyoansim-Bold';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.page-title {
+  font-size: 20px !important;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-family: 'Hakgyoansim-Bold';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pink-text {
+  color: #f4aab9 !important;
+}
+
+.highlight {
+  color: #C79665;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #f4aab9;
+  cursor: pointer;
+  font-family: 'Hakgyoansim-Regular';
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 90%;
+  margin: 0 auto 24px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 48px 10px 16px;
+  border: 2px solid #f4c7d4;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #C79665;
+  font-family: 'Hakgyoansim-Bold';
+}
+
+.search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px; /* 버튼 고정 공간 확보 */
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 10px auto;
+  padding: 10px 16px;
+  width: 90%;
+  border-radius: 24px;
+  border: 2px solid #f4c7d4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.user-item.selected {
+  background-color: #f4aab9;
+  border-color: #d99aaa;
+}
+
+.user-item.selected .user-name {
+  color: white;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-name {
+  flex: 1;
+  margin-left: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'GmarketSans-Medium';
+  color: #C79665;
+  text-align: left;
+}
+
+.select-circle {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #d99aaa;
+  border-radius: 50%;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.user-item.selected .select-circle {
+  background-color: #a66a3d;
+}
+
+/* ✅ 고정된 하단 버튼 */
+.button-wrapper {
+  position: fixed;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  background: #fffbe9;
+  padding: 12px 0;
+}
+
+.create-group-btn {
+  font-family: 'GmarketSans-Medium';
+  padding: 12px 28px;
+  background-color: #f4aab9;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
