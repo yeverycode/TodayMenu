@@ -1,0 +1,14 @@
+# 가상환경 및 캐시 제외
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# IDE 설정 제외
+*.iml
+.idea/
+.vscode/
+
+# 기타
+.DS_Store
