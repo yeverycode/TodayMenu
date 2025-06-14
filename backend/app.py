@@ -23,14 +23,7 @@ app = FastAPI(title="오늘의 먹방은 API", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
-        "http://192.168.219.102:3000",
-        "http://172.20.26.206:3000",
-        "http://192.168.227.48:3000",
-        "http://172.20.7.31:3000",
-        "http://10.101.13.101:3000",
-        "http://172.30.1.97:3000",
-        "http://192.168.79.48:3000",
+        "http://localhost:",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -38,10 +31,10 @@ app.add_middleware(
 )
 
 
-# ✅ 라우터 등록 (prefix 주의)
+# 라우터 등록 (prefix 주의)
 app.include_router(register_router, tags=["auth"])
 app.include_router(mypage_router, tags=["mypage"])
-app.include_router(review_router, prefix="/api", tags=["review"])  # ✅ 수정됨
+app.include_router(review_router, prefix="/api", tags=["review"])  # 수정됨
 app.include_router(rule_recommend_router, prefix="/api", tags=["rule-recommend"])
 app.include_router(llm_router, tags=["llm"])
 app.include_router(llm_recommend_router, prefix="/api", tags=["llm-streaming"])
@@ -179,4 +172,4 @@ def llm_recommend(request: ChatRecommendRequest):
 # -------------------------------
 @app.get("/")
 def health_check():
-    return {"message": "오늘의 먹방은 API 정상 동작 중 🚀"}
+    return {"message": "오늘의 먹방은 API 정상 동작 중"}
